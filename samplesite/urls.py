@@ -56,6 +56,6 @@ urlpatterns = [
     path('home', homepage),
     path('', homepage),
     path('password/<password>', user_password),
-    path('password/generate/<length>', generate_password),
+    path('password/generate/<int:length>', generate_password),
     path('article/<int:article_id>/<slug:article_slug>', article),
 ]
